@@ -1,12 +1,15 @@
-language: objective-c
-
-install:
-  - brew install neko haxe
-  - cd ..
-  - mkdir haxelib
-  - haxelib setup haxelib
-  - haxelib install hxcpp 3.1.68 > /dev/null
-before_script:
-  - cd $TRAVIS_BUILD_DIR
-script:
-  - sh test.sh
+language: android
+android:
+- build-tools-19.1.0
+- android-15
+- sys-img-armeabi-v7a-android-19
+# install:
+#   - brew install neko haxe
+#   - cd ..
+#   - mkdir haxelib
+#   - haxelib setup haxelib
+#   - haxelib install hxcpp 3.1.68 > /dev/null
+# before_script:
+#   - cd $TRAVIS_BUILD_DIR
+# script:
+#   - sh test.sh
