@@ -1,8 +1,8 @@
 language: android
-android:
-- build-tools-19.1.0
-- android-15
-- sys-img-armeabi-v7a-android-19
+# android:
+# - build-tools-19.1.0
+# - android-15
+# - sys-img-armeabi-v7a-android-19
 # install:
 #   - brew install neko haxe
 #   - cd ..
